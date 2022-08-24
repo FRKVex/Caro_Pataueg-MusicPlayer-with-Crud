@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.music_import{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    padding: 6px;
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: #181818;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.textbox01{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+.textbox02{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+}
+
+.textbox03{
+    position: absolute;
+    top: 55%;
+    left: 20%;
+}
+
+.textbox1{
+    position: absolute;
+    top: 11%;
+    left: 20%;
+}
+
+.textbox2{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.textbox3{
+    position: absolute;
+    top: 48%;
+    left: 20%;
+}
+
+.textbox4{
+    position: absolute;
+    top: 66%;
+    left: 20%;
+}
+
+
+.music_update{
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    padding: 6px;
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: #181818;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.table_content{
+    position: absolute;
+    top: 30%;
+    left: 46%;
+    font-family: 'Nunito', sans-serif;
+    border-collapse: collapse;
+    color: whitesmoke;
+    min-width: 500px;
+    width: 800px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    height: 15px;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 5%;
+}
+
+tr::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+
+.head:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+td{
+    text-align: center;
+}
+
+input[type=text]{
+    width: 300px;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+    background: none;
+    color: whitesmoke;
+  }
+  
+input[type=text]:focus{
+    border-color: #338033;
+    box-shadow:0 0 8px 0 #338033;
+}
+
+.import_content{
+    position: absolute;
+    top: 85%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+
+.update_content{
+    position: absolute;
+    top: 92%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+
+button{
+    background: none;
+    color:whitesmoke;
+    width: 75px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #338033;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: .6s;
+    display: inline-block;
+}
+
+button:hover{
+    background: #338033;
+    cursor: pointer;
+}

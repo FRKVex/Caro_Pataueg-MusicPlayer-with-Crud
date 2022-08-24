@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.container1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    width: 530px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: #181818;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.cover img{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 130px;
+}
+
+.songTitle{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+
+.buttons1{
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    display: inline-block;
+    width: 100%;
+    padding: 1%;
+    margin: 0;
+    text-align: center;
+}
+.buttons1 button{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 90px;
+    background-color: #E1E6EC;
+    text-align: left;
+    margin: 10px 9px;
+    border: none;
+}
+
+.buttons1 button:active{
+    background: #E1E6EC;
+    box-shadow: inset 2px 2px 5px #A2B1C6 , -2px -2px 11px  #fff  ;
+}
+.buttons1 button img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: 40%;
+}
+
+.level{
+    position: absolute;
+    left: 40%;
+    top: 45%;
+    width: 50%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: black;
+    border-radius: 10px;
+}
+
+.level::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: #338033;
+    width: 15px; 
+    height: 10px; 
+    border-radius: 50px;
+}
+
+.level::-moz-range-thumb{
+    width: 50px;
+    height: 50px;
+}
+
+.container2{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 6px;
+    width: 530px;
+    height: 350px;
+    border-radius: 8px;
+    background-color: #181818;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.aSong{
+    position: absolute;
+    left: 15%;
+    top: 8%;
+    font-size: 2.0rem;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.container2 .fa-plus-circle{
+    position: absolute;
+    top: 14%;
+    left: 8%;
+    transform: translate(-50%,-50%);
+    color:whitesmoke;
+    font-size: 2rem;
+}
+
+.fa-plus-circle:hover{
+   color: #338033;
+    cursor: pointer;
+}
+
+.container2 .fa-refresh{
+    position: absolute;
+    top: 14%;
+    left: 94%;
+    transform: translate(-50%,-50%);
+    color:whitesmoke;
+    font-size: 1.5rem;
+}
+
+.fa-refresh:hover{
+   color: #338033;
+    cursor: pointer;
+}
+
+.music-box{
+    width: 100%;
+    height: 260px;
+    margin-top: 15%;
+    margin-bottom: 3%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.music-box::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+
+.music-info{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    background: #181818;
+    margin-top: px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.music-info:hover{
+    background-color: #383838;
+    transition: 0.4s;
+}
+
+.music-info .fa-times{
+    margin-left: 17%;
+    margin-top: 22px;
+    font-weight: normal;
+    color:whitesmoke;
+    cursor: pointer;
+}
+
+.music-info .fa-refresh:hover{
+    color: black;
+    transition: 0.4s;
+}
+
+.music-img{
+    width: 50px;
+    height: 50px;
+}
+ 
+.img1{
+    width: 50px;
+    height: 50px;
+    margin: 5px 10px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.music-name{
+    width: 300px;
+    padding: 0 30px;
+    height: 50px;
+    color: whitesmoke;
+}
+
+.music-name h3{
+    margin-top: 7px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 15px;
+    text-align: left;
+}
+
+.music-name p{
+    margin-top: 7px;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing:0.5px;
+    line-height: 10px;
+    text-align: left;
+}
+
+hr{
+    width: 100%;
+    margin-top: 52px;
+    margin-bottom: 6px;
+}
+
+
+.box{
+    position: absolute;
+    top: 120%;
+    left: 52%;
+    width: 500px;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+.ToSpot{
+    background: none;
+    width: 300px ;
+    height: 25px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-bottom: 1px solid #338033;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+input{
+    position: center;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: .5s;
+    text-align: center;
+    color: whitesmoke;
+}
+
+input::placeholder{
+    color: whitesmoke;
+    font-size: 12px;
+    opacity: .3;
+    text-align: center;
+}
+
+input::placeholder{
+    color: whitesmoke;
+}
+
+button{
+    background: none;
+    color:whitesmoke;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #338033;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: .6s;
+    display: inline-block;
+}
+
+.buttons2{
+    display: inline-block;
+    width: 100%;
+    padding: 1%;
+    margin: 0;
+    text-align: center;
+}
+
+.buttons2 button{
+    position: relative;
+    width: 60px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 9px;
+    border: 1px solid #338033;
+    font-size: 12px;
+    transition: .6s;
+    overflow: hidden;
+    color: whitesmoke;
+}
+
+.buttons2 button::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .2);
+    width: 30px;
+    height: 100px;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+.buttons2 button:hover{
+    background: #338033;
+    cursor: pointer;
+}
+
+.buttons2 button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}

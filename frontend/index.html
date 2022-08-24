@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="container1">
+            <p class="songTitle" id="SongTitle">SONG TITLE</p>
+                <div class="cover" id="cover">
+                    <img src="img/img1.jpg">
+                </div>
+                    <input id="range" class="level" type="range" value="0" min="0">
+                <div class="buttons1">
+                    <button id="prev" onclick="prevAudio()"><img src="img/previous.png"></button>
+                    <button id="play" onclick="btnToggle()"><img id="play_img" src="img/play.png"></button>
+                    <button id="next" onclick="nextAudio()"><img src="img/next.png"></button>
+                </div>  
+        </div>
+
+        <div class="container2">
+                <h2 class="aSong">SONG LIST</h2>
+            <a href = "html/song-window.html"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+            <i class="fa fa-refresh" aria-hidden="true" onclick="getAllSongs()"></i>
+            <div class="box">
+                <div class="buttons2">
+                    <button id="title" onclick="getSongByTitle()">TITLE</button>
+                    <button id="artist" onclick="getSongByArtist()">ARTIST</button>
+                    <button id="album" onclick="getSongByAlbum()">ALBUM</button>
+                </div>
+                <form> 
+                    <input class="ToSpot" type="text" placeholder="Search title, artist, album" id="searchTxt" autocomplete="off">
+                </form>s
+            </div>
+            <div id = "emptyPlayist" class="music-box"></div>
+        </div>
+    </div>
+
+        <p id="outputJSON"></p>
+        <script src="js/const.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/element.js"></script>
+        <script src="js/playlistFunc.js"></script>
+        <script src="js/app-client.js"></script>
+        <script>
+            getAllSongs()
+        </script>
+</body>
+</html>

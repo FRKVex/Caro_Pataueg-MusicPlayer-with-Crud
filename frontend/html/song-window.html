@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SONG IMPORT</title>
+<link rel="stylesheet" href="../css/song-window.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="music_import">
+        <input class="textbox01" type="text" id="import-txt1" placeholder="TITLE">
+        <input class="textbox02" type="text" id="import-txt2" placeholder="ALBUM">
+        <input class="textbox03" type="text" id="import-txt3" placeholder="ARTIST">
+        <button class="import_content" id="submit" onclick="addSong()">SUBMIT</button>
+    </div>
+
+    <div class="music_update">
+        <input class="textbox1" type="text" id="update-txt1" placeholder="ID">
+        <input class="textbox2" type="text" id="update-txt2" placeholder="TITLE">
+        <input class="textbox3" type="text" id="update-txt3" placeholder="ALBUM">
+        <input class="textbox4" type="text" id="update-txt4" placeholder="ARTIST">
+        <button class="update_content" id="update" onclick="updateSong()">UPDATE</button>
+    </div>
+
+    <p id="outputJSON"></p>
+    <table class="table_content" id="TableId"> 
+    </table>
+
+        <script src="../js/const.js"></script>
+        <script src="../js/element.js"></script>
+        <script src="../js/playlistFunc.js"></script>
+        <script src="../js/app-client.js"></script>
+        <script>
+            viewAllSongs()
+        </script>
+</body>
+</html>
